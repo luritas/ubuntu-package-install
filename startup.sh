@@ -12,7 +12,7 @@ echo "Installing zip"
 sudo apt install -y zip
 
 echo "Installing awscli"
-sudo apt install awscli
+sudo apt install -y awscli
 
 
 echo "Step1 - Installing Apache"
