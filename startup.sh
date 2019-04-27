@@ -3,12 +3,16 @@
 
 echo "Installing Utility Package"
 # Installing curl
-echo "Insalling curl..."
+echo "Installing curl..."
 echo "sudo apt install curl"
 sudo apt install curl
 
 # Installing zip
+echo "Installing zip"
 sudo apt install -y zip
+
+echo "Installing awscli"
+sudo apt install awscli
 
 
 echo "Step1 - Installing Apache"
