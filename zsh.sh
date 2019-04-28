@@ -17,6 +17,9 @@ echo "Installing syntax highlighter"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/zsh-syntax-highlighting
 echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc                   
 
+echo "activate zsh"
+zsh 
+
 echo "Installing auto suggestions"
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
