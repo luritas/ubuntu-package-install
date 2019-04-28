@@ -18,6 +18,23 @@ sudo apt install -y -qq nodejs
 echo "Installing lrzsz"
 sudo apt install -y -qq lrzsz
 
+echo "see details below link"
+echo "https://github.com/mmastrac/iterm2-zmodem"
+echo "chmod 755 /usr/local/bin/iterm2-send-zmodem.sh"
+echo "chmod 755 /usr/local/bin/iterm2-recv-zmodem.sh"
+"""
+Regular expression: rz waiting to receive.\*\*B0100
+Action: Run Silent Coprocess
+Parameters: /usr/local/bin/iterm2-send-zmodem.sh
+Instant: checked
+
+Regular expression: \*\*B00000000000000
+Action: Run Silent Coprocess
+Parameters: /usr/local/bin/iterm2-recv-zmodem.sh
+Instant: checked
+"""
+echo ""
+
 
 echo "Installing awscli..."
 sudo apt install -y -qq awscli
