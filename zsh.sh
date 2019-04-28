@@ -6,6 +6,11 @@ sudo apt install zsh
 
 echo "Make it your default shell"
 sudo chsh -s $(which zsh)
+echo "To change zsh as default shell"
+echo "sudo vi /etc/pam.d/chsh"
+echo "comment pam_shells.so"
+
+
 
 echo "To see details, below link"
 echo "https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH"
