@@ -17,13 +17,13 @@ sudo apt install -y -qq awscli
 
 echo "Step1 - Installing Apache"
 echo "sudo apt install -qq apache2"
-sudo apt install -y apahce2
+sudo apt install -y -qq apahce2
 # 필요시에 ufw로 방화벽 풀기
 
 echo "Step2 - Installing MySQL"
 echo "Installing MySQL..."
 echo "sudo apt install mysql-server"
-sudo apt install -y mysql-server 
+sudo apt install -y -qq mysql-server 
 
 echo "To use password login type"
 echo "sudo mysql_secure_installation"
@@ -40,8 +40,8 @@ echo "mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password
 
 echo "Step3 - Installing PHP"
 echo "Installing PHP..."
-echo "sudo apt install -y php libapache2-mod-php php-mysql"
-sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-mbstring php7.2-xml
+echo "sudo apt install -y php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-mbstring php7.2-xml"
+sudo apt install -y -qq php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-mbstring php7.2-xml
 
 # Install composer
 echo Installing composer...

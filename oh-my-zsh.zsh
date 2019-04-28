@@ -13,7 +13,7 @@ echo ""
 #https://github.com/junegunn/fzf
 echo "Installing fzf..."
 git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf
-$HOME/.fzf/install
+$HOME/.fzf/install --key-bindings --completion --update-rc
 echo "# Set fzf installation directory path" >> $HOME/.zshrc
 echo "export FZF_BASE=$HOME/.fzf/install/dir" >> $HOME/.zshrc
 echo "" >> $HOME/.zshrc
