@@ -6,10 +6,13 @@ sudo apt install zsh
 
 echo "Make it your default shell"
 sudo chsh -s $(which zsh)
+echo "for aws ec2, create root password"
+echo "sudo su"
+echo "passwd root"
+echo ""
 echo "To change zsh as default shell"
 echo "sudo vi /etc/pam.d/chsh"
 echo "comment pam_shells.so"
-
 
 
 echo "To see details, below link"
