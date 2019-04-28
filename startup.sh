@@ -12,6 +12,9 @@ sudo apt install -qq curl
 echo "Installing -qq zip..."
 sudo apt install -y -qq zip
 
+echo "Installing -qq npm"
+sudo apt install -y -qq npm
+
 echo "Installing awscli..."
 sudo apt install -y -qq awscli
 

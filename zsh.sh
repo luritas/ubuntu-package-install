@@ -12,6 +12,8 @@ echo "https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins"
 echo "Get oh-my-zsh installer..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+echo "maybe your Password incorrect..."
+
 echo "Make it your default shell"
 sudo chsh $USER -s $(which zsh)
 
