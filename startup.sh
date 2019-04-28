@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Update Package List"
 echo "apt update"
-sudo apt update
+sudo apt update -qq
 
 echo "Installing Utility Package..."
 # Installing curl
