@@ -9,11 +9,14 @@ echo "Installing curl..."
 sudo apt install -qq curl
 
 # Installing zip
-echo "Installing -qq zip..."
+echo "Installing zip..."
 sudo apt install -y -qq zip
 
-echo "Installing -qq noddejs"
+echo "Installing noddejs"
 sudo apt install -y -qq nodejs
+
+echo "Installing lrzsz"
+sudo apt install -y -qq lrzsz
 
 
 echo "Installing awscli..."
