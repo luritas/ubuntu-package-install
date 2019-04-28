@@ -3,11 +3,10 @@ echo "Get oh-my-zsh installer..."
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo ""
 echo "Installing syntax highlighter"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/zsh-syntax-highlighting
-echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 echo ""
 echo "Installing zsh auto-suggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 echo ""
 
 #https://github.com/junegunn/fzf
@@ -32,7 +31,7 @@ echo "https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins"
 
 echo ""
 echo "Most use"
-echo "plugins=(git bundler dotenv rake ruby aws branch common-aliases fzf gitignore laravel pip python tmux zsh-navigation-tools tmuxinator vi-mode z)"
+echo "plugins=(git bundler dotenv rake ruby aws branch common-aliases fzf gitignore laravel pip python tmux zsh-navigation-tools tmuxinator vi-mode z zsh-autosuggestions zsh-syntax-highlighting)"
 echo ""
 echo "Only ubuntu"
 echo "plugins=(... ubuntu command-not-found)"
