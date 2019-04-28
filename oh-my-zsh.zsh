@@ -7,7 +7,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/zsh-syn
 echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc
 
 echo "Installing auto suggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # 설정 후 적용
 source ~/.zshrc
