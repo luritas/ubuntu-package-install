@@ -1,4 +1,10 @@
-#!/bin/zsh
+#!/bin/bash
+echo "oh-my-zsh To see details, below link"
+echo "https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH"
+
+echo "To active plugins, below link"
+echo "https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins"
+
 echo "Get oh-my-zsh installer..."
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo ""
@@ -21,8 +27,6 @@ echo "# export DISABLE_FZF_AUTO_COMPLETION=\"true\"" >> $HOME/.zshrc
 echo "" >> $HOME/.zshrc
 echo "# Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)" >> $HOME/.zshrc
 echo "# export DISABLE_FZF_KEY_BINDINGS=\"true\"" >> $HOME/.zshrc
-
-
 source ~/.zshrc
 
 echo ""
