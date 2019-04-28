@@ -6,7 +6,6 @@ sudo apt update
 echo "Installing Utility Package..."
 # Installing curl
 echo "Installing curl..."
-echo "sudo apt install -qq curl"
 sudo apt install -qq curl
 
 # Installing zip

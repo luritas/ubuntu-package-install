@@ -5,21 +5,23 @@ echo "sudo apt install zsh"
 sudo apt install zsh
 
 echo "Make it your default shell"
-sudo chsh -s $(which zsh)
-echo "for aws ec2, create root password"
-echo "sudo su"
-echo "passwd root"
-echo ""
-echo "To change zsh as default shell"
-echo "sudo vi /etc/pam.d/chsh"
-echo "comment pam_shells.so"
-
+sudo chsh $USER -s $(which zsh)
 
 echo "To see details, below link"
 echo "https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH"
 
 echo "Get oh-my-zsh installer..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Installing syntax highlighter"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc                   
+
+echo "Installing auto suggestions"
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+# 설정 후 적용
+source ~/.zshrc
 
 echo "To active plugins, below link"
 echo "https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins"
