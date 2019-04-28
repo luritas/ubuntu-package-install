@@ -14,7 +14,7 @@ echo "Get oh-my-zsh installer..."
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Installing syntax highlighter"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/zsh-syntax-highlighting
 echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc                   
 
 echo "Installing auto suggestions"
