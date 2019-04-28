@@ -10,7 +10,7 @@ echo "To active plugins, below link"
 echo "https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins"
 
 echo "Get oh-my-zsh installer..."
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Make it your default shell"
 sudo chsh $USER -s $(which zsh)
