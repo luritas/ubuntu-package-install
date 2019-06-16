@@ -37,6 +37,9 @@ echo "# export DISABLE_FZF_AUTO_COMPLETION=\"true\"" >> $HOME/.zshrc
 echo "" >> $HOME/.zshrc
 echo "# Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)" >> $HOME/.zshrc
 echo "# export DISABLE_FZF_KEY_BINDINGS=\"true\"" >> $HOME/.zshrc
+
+echo "# python encoding problem solution"
+echo "export PYTHONIOENCODING=utf-8"
 source ~/.zshrc
 
 echo ""
